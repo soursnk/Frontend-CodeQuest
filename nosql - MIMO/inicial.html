@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeQuest — Dashboard</title>
+  <link rel="stylesheet" href="inicial.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+ 
+</head>
+<body>
+
+<div class="dashboard">
+
+  <!-- ==============================
+       SIDEBAR
+  ============================== -->
+  <aside class="sidebar">
+
+<div class="sidebar-logo">
+  <img src= "icon2.png" alt="Logo" class="logo-img" onerror="this.style.display='none'" />
+  <span class="logo-text">
+    <span class="logo-code">Code</span><span class="logo-quest">Quest</span>
+  </span>
+</div>
+
+    <a href="#" class="nav-item active">
+      <i class="ti ti-layout-dashboard nav-icon" aria-hidden="true"></i>
+      Dashboard
+    </a>
+    <a href="#" class="nav-item">
+      <i class="ti ti-book nav-icon" aria-hidden="true"></i>
+      Lições
+    </a>
+    <a href="#" class="nav-item">
+      <i class="ti ti-help-circle nav-icon" aria-hidden="true"></i>
+      Quizzes
+    </a>
+    <a href="#" class="nav-item">
+      <i class="ti ti-trophy nav-icon" aria-hidden="true"></i>
+      Ranking
+    </a>
+    <a href="#" class="nav-item">
+      <i class="ti ti-user nav-icon" aria-hidden="true"></i>
+      Perfil
+    </a>
+    <a href="#" class="nav-item">
+      <i class="ti ti-settings nav-icon" aria-hidden="true"></i>
+      Configurações
+    </a>
+
+    <div class="nav-bottom">
+      <a href="#" class="nav-item danger">
+        <i class="ti ti-logout nav-icon" aria-hidden="true"></i>
+        Sair
+      </a>
+    </div>
+
+  </aside>
+
+  <!-- ==============================
+       MAIN
+  ============================== -->
+  <main class="main">
+
+    <!-- Topbar -->
+    <div class="topbar">
+      <div class="greeting">
+        <h1>Olá, Manuela 👋</h1>
+        <p>Continue sua jornada de aprendizado.</p>
+      </div>
+      <div class="topbar-right">
+        <button class="notif-btn" aria-label="Notificações">
+          <i class="ti ti-bell" style="font-size: 15px;" aria-hidden="true"></i>
+          <div class="notif-dot"></div>
+        </button>
+        <div class="user-avatar" title="Manuela">MA</div>
+      </div>
+    </div>
+
+    <!-- Stats Row -->
+    <div class="stats-row">
+
+      <!-- XP Card -->
+      <div class="stat-card xp-card">
+        <div>
+          <div class="level-badge">12</div>
+          <div class="stat-label">XP Atual</div>
+          <div class="stat-value">
+            1.250 <span class="stat-total">/ 2.000 XP</span>
+          </div>
+          <div class="stat-sub">Faltam 750 XP para o próximo nível</div>
+        </div>
+        <div class="xp-bar-bg">
+          <div class="xp-bar-fill"></div>
+        </div>
+      </div>
+
+      <!-- Streak -->
+      <div class="stat-card stat-sm">
+        <div class="stat-icon">🔥</div>
+        <div class="stat-value">7</div>
+        <div class="stat-label">Streak — dias</div>
+      </div>
+
+      <!-- XP Total -->
+      <div class="stat-card stat-sm">
+        <div class="stat-icon">⭐</div>
+        <div class="stat-value">12.850</div>
+        <div class="stat-label">XP Total</div>
+      </div>
+
+      <!-- Lições -->
+      <div class="stat-card stat-sm">
+        <div class="stat-icon">📘</div>
+        <div class="stat-value">24</div>
+        <div class="stat-label">Lições concluídas</div>
+      </div>
+
+    </div>
+    <!-- /Stats Row -->
+
+    <!-- Bottom Row -->
+    <div class="bottom-row">
+
+      <!-- Coluna esquerda -->
+      <div class="left-col">
+
+        <!-- Continue aprendendo -->
+        <div class="panel">
+          <div class="panel-header">
+            <span class="panel-title">Continue aprendendo</span>
+          </div>
+          <div class="lesson-card">
+            <div class="lesson-icon">
+              <i class="ti ti-code" aria-hidden="true"></i>
+            </div>
+            <div class="lesson-info">
+              <div class="lesson-name">Lógica de Programação</div>
+              <div class="lesson-prog-bg">
+                <div class="lesson-prog-fill"></div>
+              </div>
+              <div class="lesson-pct">85% concluído</div>
+            </div>
+            <button class="btn-continue">Continuar</button>
+          </div>
+        </div>
+
+        <!-- Ranking Semanal -->
+        <div class="panel">
+          <div class="panel-header">
+            <span class="panel-title">Ranking Semanal</span>
+            <a href="#" class="panel-link">Ver tudo →</a>
+          </div>
+          <div class="ranking-list">
+
+            <div class="rank-item">
+              <span class="rank-num gold">1</span>
+              <div class="rank-avatar pink">AC</div>
+              <span class="rank-name">Ana Clara</span>
+              <span class="rank-xp">15.200 XP</span>
+            </div>
+
+            <div class="rank-item rank-you">
+              <span class="rank-num purple">2</span>
+              <div class="rank-avatar purple">MA</div>
+              <span class="rank-name">
+                Manuela <span class="you-tag">você</span>
+              </span>
+              <span class="rank-xp">12.850 XP</span>
+            </div>
+
+            <div class="rank-item">
+              <span class="rank-num">3</span>
+              <div class="rank-avatar green">GB</div>
+              <span class="rank-name">Gabriel</span>
+              <span class="rank-xp">10.430 XP</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <!-- /Coluna esquerda -->
+
+      <!-- Coluna direita -->
+      <div class="right-col">
+
+        <!-- Streak Diária -->
+        <div class="panel">
+          <div class="panel-header">
+            <span class="panel-title">Streak diária</span>
+            <span class="panel-link" style="color: #4ade80; font-size: 10px;">
+              Continue assim!
+            </span>
+          </div>
+          <div class="streak-count-row">
+            <span class="streak-fire">🔥</span>
+            <span class="streak-number">7</span>
+            <span class="streak-dias">dias</span>
+          </div>
+          <div class="streak-dots">
+            <div class="day-dot">
+              <div class="dot done">
+                <i class="ti ti-check" style="font-size: 12px;" aria-hidden="true"></i>
+              </div>
+              <span class="day-label">S</span>
+            </div>
+            <div class="day-dot">
+              <div class="dot done">
+                <i class="ti ti-check" style="font-size: 12px;" aria-hidden="true"></i>
+              </div>
+              <span class="day-label">T</span>
+            </div>
+            <div class="day-dot">
+              <div class="dot done">
+                <i class="ti ti-check" style="font-size: 12px;" aria-hidden="true"></i>
+              </div>
+              <span class="day-label">Q</span>
+            </div>
+            <div class="day-dot">
+              <div class="dot done">
+                <i class="ti ti-check" style="font-size: 12px;" aria-hidden="true"></i>
+              </div>
+              <span class="day-label">Q</span>
+            </div>
+            <div class="day-dot">
+              <div class="dot done">
+                <i class="ti ti-check" style="font-size: 12px;" aria-hidden="true"></i>
+              </div>
+              <span class="day-label">S</span>
+            </div>
+            <div class="day-dot">
+              <div class="dot done">
+                <i class="ti ti-check" style="font-size: 12px;" aria-hidden="true"></i>
+              </div>
+              <span class="day-label">S</span>
+            </div>
+            <div class="day-dot">
+              <div class="dot today">P</div>
+              <span class="day-label active">D</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Conquistas Recentes -->
+        <div class="panel">
+          <div class="panel-header">
+            <span class="panel-title">Conquistas recentes</span>
+            <a href="#" class="panel-link">Ver todas →</a>
+          </div>
+          <div class="ach-list">
+
+            <div class="ach-item">
+              <div class="ach-icon bronze">🏆</div>
+              <div class="ach-text">
+                <div class="ach-name">Primeiros Passos</div>
+                <div class="ach-desc">Concluiu sua primeira lição</div>
+              </div>
+              <span class="ach-xp">+50 XP</span>
+            </div>
+
+            <div class="ach-item">
+              <div class="ach-icon pink">🎯</div>
+              <div class="ach-text">
+                <div class="ach-name">Quiz Master</div>
+                <div class="ach-desc">Acertou 10 quizzes</div>
+              </div>
+              <span class="ach-xp">+100 XP</span>
+            </div>
+
+            <div class="ach-item">
+              <div class="ach-icon orange">🔥</div>
+              <div class="ach-text">
+                <div class="ach-name">Sequência de 7 dias</div>
+                <div class="ach-desc">Manteve o streak por 7 dias</div>
+              </div>
+              <span class="ach-xp">+150 XP</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <!-- /Coluna direita -->
+
+    </div>
+    <!-- /Bottom Row -->
+
+  </main>
+
+</div>
+
+</body>
+</html>
