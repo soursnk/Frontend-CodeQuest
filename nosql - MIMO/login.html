@@ -7,21 +7,58 @@
     <link rel="stylesheet" href="login.css">
     <title>CodeQuest</title>
 </head>
+
 <body>
     <main class="container-main">
 
         <!-- lado 1-->
-        <div class="login">
-            <img src="img/icon2.png" alt="">
-            <h1 class="titulo">CodeQuest</h1>
-            <p class="frase1">Transforme conhecimento em XP.</p>
-        </div>
+        <section class="lado1">
+            
+                <img src="img/icon2.png" alt="">
+                <h1 class="titulo">
+                    <span class="code">Code</span><span class="quest">Quest</span>               
+                </h1>
+                <p class="frase1">Transforme conhecimento em XP.</p>
+            
+        </section>
 
         <!-- lado 2-->
-        <div class="login">
+       
+        <section class="lado2">
+            <div class="container-login">
 
-        </div>
+                <form id="formlogin">
 
+                <h2 class="frase2">Bem vindo de volta!</h2>
+                <h4 class="frase3">Entre na sua conta para continuar</h4>
+
+                    <input type="email" placeholder="E-mail">
+                    <input type="password" placeholder="Senha">
+                    <button type="submit">Entrar</button>
+ 
+                    <p class="frase4">Não possui conta? <span id="botaocadastro">Cadastre-se</span> </p>
+                </form>
+
+                <form id="formcadastro">
+                    <h2 class="frase2">Crie sua conta</h2>
+                    <p class="frase3">Comece agora no CodeQuest</p>
+
+                     <input type="text" placeholder="Nome">
+
+                 <input type="email" placeholder="Email">
+                <input type="password" placeholder="Senha">
+                <input type="password" placeholder="Confirmar senha">
+
+                <button type="submit">Cadastrar</button>
+
+                <p class="frase4"> Já possui conta? <span id="botaoentrar">Entrar</span></p>
+
+                </form>
+
+            </div>
+        </section>
     </main>
+    
+    <script src="login.js"></script>
 </body>
 </html>

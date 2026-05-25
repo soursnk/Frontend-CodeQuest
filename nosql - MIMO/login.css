@@ -20,14 +20,19 @@ body{
 }
 
 .container-main{
-    text-align: center;
     width: 100%;
-    max-width: 500px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 40px;
 }
 
 .container-main img{
     width: 100%;
-    max-width: 220%;
+    max-width: 180%;
     
     filter: drop-shadow(0 0 15px  #7c3aed)
      drop-shadow(0 0 30px #4f46e5);
@@ -35,25 +40,136 @@ body{
 
 .titulo{ 
     color: white;
-    font-size: clamp(2.5rem, 6vw, 4rem);
-    margin-top: 20px;
+    font-weight: bold;
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    margin-top: 0px;
+}
+
+.code {
+    color: white;
+}
+
+.quest {
+    color: #8b5cf6;
+    text-shadow: 0 0 10px rgba(139, 92, 246, 0.8);
 }
 
 .frase1{
-    color: #d1d5db;
-    margin-top: 10px;
+    color: #ffffff;
+    margin-top: 5px;
     font-size: clamp(1rem, 2vw, 1.2rem);
 }
 
-.login{
+.lado1{
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
 }
 
-/* :root{
-    --bg-color: #060b26;
-    --card-color: #11193b;
-    --primary: #4f46e5;
-    --secondary: #7c3aed;
-    --text: #ffffff;
-    --yellow: #facc15;
-}*/
+.lado1 img{
+    margin-bottom: -10px;
+}
+
+.lado2{
+    width: 100%;
+    max-width: 420px;
+    background: rgba(8, 15, 60, 0.75);
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(12px);
+    border-radius: 24px;
+    padding: 45px;
+    box-shadow: 0 0 30px rgba(79, 70, 229, 0.25);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.lado2 input{
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.08);
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s; 
+}
+
+.lado2 input::placeholder{
+    color: #cbd5e1;
+}
+
+.lado2 input:focus{
+    border: 1px solid #7c3aed;
+
+    box-shadow:
+    0 0 10px rgba(124, 58, 237, 0.5);
+}
+
+.lado2 button{
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(90deg,#4f46e5,#7c3aed);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.lado2 button:hover{
+    transform: translateY(-2px);
+    box-shadow:
+    0 0 20px rgba(124, 58, 237, 0.5);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.frase2{
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: clamp(2rem);
+}
+
+.frase3{
+    color: #cbd5e1;
+    text-align: center;
+    font-size: 0.95rem;
+    margin-top: 0px;
+}
+
+#formcadastro{
+    display: none;
+}
+
+.frase4{
+    color: white;
+    text-align: center;
+    font-size: 0.95rem;
+    margin-top: 10px;
+}
+
+.frase4 span{
+    color: #8b5cf6;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.frase4 span:hover{
+    color: #a78bfa;
+}
