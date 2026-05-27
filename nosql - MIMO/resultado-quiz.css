@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(135deg, #060b26, #11193b);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+main{
+    display: flex;
+    min-height: 100vh;
+}
+
+.barra-lateral{
+    width: 260px;
+    background: rgba(10, 15, 40, 0.95);
+    border-right: 1px solid rgba(255,255,255,0.08);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.logo{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.code{
+    color: white;
+}
+
+.quest{
+    color: #8b5cf6;
+    text-shadow: 0 0 10px rgba(139, 92, 246, 0.8);
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #cbd5e1;
+    padding: 14px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.menu a:hover{
+    background:rgba(124, 58, 237, 0.2);
+    color: white;
+}
+
+.container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.card{
+    width: 100%;
+    max-width: 700px;
+    background:rgba(17, 25, 59, 0.8);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 30px;
+    padding: 50px;
+    text-align: center;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 30px rgba(79, 70, 229, 0.2);
+}
+
+.emoji{
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+
+.card h1{
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.frase2{
+    color: #cbd5e1;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+.ganho{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.ganho-caixa{
+    width: 200px;
+    padding: 25px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.ganho-caixa h2{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #c4b5fd;
+}
+
+.progresso{
+    margin-bottom: 40px;
+}
+
+.progresso-barra{
+    width: 100%;
+    height: 18px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.08);
+    overflow: hidden;
+}
+
+.progresso-linha{
+    width: 80%;
+    height: 100%;
+    background: linear-gradient(90deg, #4f46e5, #7c3aed);
+    border-radius: 999px;
+}
+
+.progresso-texto{
+    display: block;
+    margin-top: 12px;
+    color: #cbd5e1;
+}
+
+.botao{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.continuar{
+    padding: 16px 32px;
+    border: none;
+    border-radius: 14px;
+    background: linear-gradient(90deg,#4f46e5, #7c3aed);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.refazer{
+    padding: 16px 32px;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px;
+    background: rgba(255,255,255,0.05);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.continuar:hover,
+.refazer:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px rgba(124, 58, 237, 0.35);
+}
+
+@media(max-width: 900px){
+
+    main{
+        flex-direction: column;
+    }
+
+    .barra-lateral{
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .card{
+        padding: 35px;
+    }
+
+    .card h1{
+        font-size: 2.2rem;
+    }
+
+}

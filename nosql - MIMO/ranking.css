@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{    
+    min-height: 100vh;
+    background:
+    linear-gradient(135deg, #060b26,#11193b);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 40px;
+}
+
+.container{
+    padding: 40px;
+}
+
+.ranking-container{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.frase1{
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.frase2{
+    color: #cbd5e1;
+    font-size: 1.1rem;
+}
+
+.nome{
+    color: white;
+    font-size: 1.8rem;
+}
+
+.nivel{
+    color: #cbd5e1;
+    margin-top: 5px;
+}
+
+.ranking-ouro{
+    width: 100%;
+    min-height: 110px;
+    background: rgba(17, 25, 59, 0.8);
+    border: 1px solid rgba(250, 204, 21, 0.4);
+    border-radius: 24px;
+    padding: 14px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 25px rgba(250, 204, 21, 0.15);
+}
+
+.ranking-ouro:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 0 35px rgba(250, 204, 21, 0.3);
+}
+
+.ranking-prata{
+    width: 100%;
+    min-height: 110px;
+    background: rgba(17, 25, 59, 0.8);
+    border: 1px solid rgba(209, 213, 219, 0.4);
+    border-radius: 24px;
+    padding: 14px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 25px rgba(209, 213, 219, 0.15);
+}
+
+.ranking-prata:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px rgba(124, 58, 237, 0.3);
+}
+
+.ranking-bronze{
+    width: 100%;
+    min-height: 110px;
+    background: rgba(17, 25, 59, 0.8);
+    border: 1px solid rgba(217, 119, 6, 0.4);
+    border-radius: 24px;
+    padding: 14px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 25px rgba(217, 119, 6, 0.15);
+}
+
+.ranking-bronze:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px rgba(124, 58, 237, 0.3);
+}
+
+.lado1{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.posicao{
+    font-size: 3rem;
+}
+
+.xp{
+    color: #c4b5fd;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
